@@ -1,0 +1,37 @@
+{% extends 'templates/base.html' %}
+
+{% block head %}
+{{ super() }}
+<title> Main Page </title>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+<h1> Welcome to the assignment! </h1>
+<p> The assignment is consisting from the following tasks: </p>
+<p> <b>Task 1</b>: Create a web page to display sales data from a CSV file </p>
+<ul>
+    <li> Use HTML, CSS, and JavaScript to create a web page that displays sales data from the provided CSV file. </li>
+    <li> The web page should include a table to present the data in a tabular format. </li>
+    <li> Parse the CSV file using Python and retrieve the necessary data to populate the table. </li>
+    <li> Apply appropriate styling using CSS to enhance the visual appearance of the table and the web page. </li>
+    <li> Implement JavaScript functionality to allow sorting the table by different columns (e.g., by date, product, or
+        sales volume) when clicking on the table headers. </li>
+    <li> Add a search input field that filters the table rows based on user input. The filtering should be performed
+        dynamically as the user types. </li>
+    <li> Make sure the web page is responsive and displays well on different screen sizes. </li>
+</ul>
+
+<p> <b>Task 2</b>: Create a page with line chart to show "Cumulative Total Sales per Month". </p>
+
+<p> <b>Task 3</b>: Create a page with bar chart to show "Monthly Total Sales for each Territory"
+    (sample look <a href="https://slidebazaar.com/items/sample-bar-chart-powerpoint-template/" target="_blank">https://slidebazaar.com/items/sample-bar-chart-powerpoint-template/</a>) and implement a button to change
+    the chart to show "Yearly" values for each Territory, button should work with Javascript without loading any
+    other page). </p>
+
+<p> <b>Task 4</b>: Create a page with a 2 pie charts to show "Total Sales by DEAL_SIZE" and "Total Discount/Surcharge
+    by DEAL_SIZE". </p>
+
+<p> <b>Task 5</b>: Create a main page with links to previous 4 pages. </p>
+
+{% endblock %}

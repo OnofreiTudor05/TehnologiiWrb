@@ -1,0 +1,51 @@
+{% extends 'templates/base.html' %}
+
+{% block head %}
+{{ super() }}
+<script defer src="{{ url_for('static', filename='js/populateTable.js') }}"></script>
+<title> Task1 </title>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<h1> Sales Report </h1>
+
+<main class="flex-shrink-0">
+    <div class="container-fluid data-container">
+        <table id="custom-datatable" class="table table-striped table-bordered table-hover nowrap">
+            <thead>
+            <tr>
+                <th> ORDER_NO</th>
+                <th> ORDER_QTY</th>
+                <th> UNIT_PRICE</th>
+                <th> SALES</th>
+                <th> ORDER_DATE</th>
+                <th> STATUS</th>
+                <th> QUATER_ID</th>
+                <th> MONTH_ID</th>
+                <th> YEAR_ID</th>
+                <th> PRODUCT_LINE</th>
+                <th> MSRP</th>
+                <th> PRODUCT_CODE</th>
+                <th> CUSTOMER_NAME</th>
+                <th> PHONE</th>
+                <th> ADDRESS_LINE_1</th>
+                <th> ADDRESS_LINE_2</th>
+                <th> CITY</th>
+                <th> STATE</th>
+                <th> POSTAL_CODE</th>
+                <th> COUNTRY</th>
+                <th> TERRITORY</th>
+                <th> CONTACT_LAST_NAME</th>
+                <th> CONTACT_FIRST_NAME</th>
+                <th> DEAL_SIZE</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</main>
+{% endblock %}

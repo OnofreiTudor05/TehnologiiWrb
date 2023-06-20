@@ -1,0 +1,101 @@
+.navbar-nav .nav-item .nav-link {
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-left: 1vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 0.5s;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.25);
+  transition-duration: 0.5s;
+}
+
+.navbar {
+    margin-bottom: 5vh;
+}
+
+.content {
+    margin-bottom: 4vh;
+}
+
+.data-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.chart {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    min-height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  width: 100%;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(68, 70, 84, 1);
+}
+
+p {
+    margin-left: 2vw;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.4rem;
+}
+
+b {
+    color: rgba(180, 255, 180, 1);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+ul, li {
+    margin-left: 1vw;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(180, 255, 180, 1);
+    margin-bottom: 3vw;
+    font-size: 1.85rem;
+}
+
+#page-container {
+  position: relative;
+}
+
+#custom-datatable{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav .nav-item .nav-link {
+      margin-top: 1vh;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  b {
+    font-size: 1.3rem;
+  }
+
+  ul, li {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

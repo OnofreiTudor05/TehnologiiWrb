@@ -1,0 +1,21 @@
+{% extends 'templates/base.html' %}
+
+{% block head %}
+{{ super() }}
+
+<script src="{{ url_for('static', filename='js/createChart.js') }}"></script>
+<title> Task2 </title>
+
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+<h1> Cumulative Sales per Month </h1>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div id="chart" class="chart"></div>
+      </div>
+    </div>
+</div>
+{% endblock %}
